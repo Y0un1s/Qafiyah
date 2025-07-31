@@ -10,7 +10,7 @@ A simple yet elegant Discord bot that brings the beauty of poetry into your serv
 
 * **AI-Generated Poems:** Generates a creative poem on any topic you provide, powered by the Gemini AI.
 
-* **Always On:** Uses a lightweight Flask web server to ensure the bot remains online.
+* **Free Hosting:** Designed to run on free hosting services like Katabump, with manual renewal every 4 days.
 
 ### How to Use
 
