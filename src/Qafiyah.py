@@ -7,34 +7,11 @@ import requests
 import json
 import lxml
 import random
-from flask import Flask
-from threading import Thread
 import google.generativeai as genai
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
 load_dotenv()
-
-# Create a basic Flask app instance
-app = Flask('')
-
-
-# Define a simple route to confirm the bot is alive
-@app.route('/')
-def home():
-    return "Here we go again!"
-
-
-# Function to run the Flask app on host 0.0.0.0 and port 8080
-def run():
-    app.run(host='0.0.0.0', port=8080)
-
-
-# Starts the Flask app in a separate thread so it doesn’t block the bot
-def keep_alive():
-    t = Thread(target=run)
-    t.start()
-
 
 # ========== Arabic Poem Fetcher ==========
 # Scrapes a random Arabic poem from aldiwan.net.
@@ -163,9 +140,6 @@ async def aipoem(interaction: discord.Interaction, topic: str):
     # Send the final poem as a follow-up message
     await interaction.followup.send(poem)
 
-
-# ========== Keep the Bot Alive ==========
-keep_alive()
 
 # ========== Bot Token ==========
 # Runs the bot with the provided token
