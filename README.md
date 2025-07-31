@@ -72,6 +72,7 @@ To run this bot, you will need to set up a few things first.
 4. **Run the bot:**
 
    ```
+   cd [src-folder]
    python your_bot_file.py
    
    ```
