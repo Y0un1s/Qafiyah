@@ -58,8 +58,6 @@ To run this bot, you will need to set up a few things first.
    
    ```
 
-   *Note: You may need to create a `requirements.txt` file from your imports.*
-
 3. **Create a `.env` file:**
    Create a file named `.env` in the project's root directory and add your bot tokens.
 
@@ -73,11 +71,10 @@ To run this bot, you will need to set up a few things first.
 
    ```
    cd [src-folder]
-   python your_bot_file.py
+   python Qafiyah.py
    
    ```
 
-   *(Replace `your_bot_file.py` with the actual name of your Python file.)*
 
 ### Credits
 
